@@ -4,8 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat Site</title>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <style>
+        .cat-site-font {
+         font-family: "ADLaM Display", serif;
+         font-weight: 400;
+         font-style: normal;
+         }
+
+    </style>
+    <!-- Remix Icon Section -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
-<body>
-    
+<body class="cat-site-font">
+    <!-- Header Section -->
+    <header>
+       <nav>
+        <div class="navbar bg-[#FFF9F4]">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Find a pet</a></li>
+                  <li><a>Breeds</a></li>
+                  <li><a>Contact us</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl" style="font-weight: 100;" > <img src="./c1-assets/logo-header.png" alt=""> Browse<span style="color: #FFDC26;">4</span>Pets</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end gap-4">
+                <i class="ri-notification-2-line hidden lg:block "></i>
+                <i class="ri-search-line hidden lg:block"></i>
+                <a class=" btn hidden lg:block px-8 py-4 flex justify-center items-center" style=" background-color:transparent; border: #FFDC26 1px solid; font-weight: lighter; ">Log In</a>
+              <a class="btn" style=" background-color: #FFDC26; font-weight: lighter; ">Register</a>
+            </div>
+          </div>
+       </nav>
+    </header>
+    <!-- Main Section -->
+     <main>
+        <!-- Banner Section -->
+         <div class="md:container md:mx-auto md:h-56 h-full relative">
+            <div
+            class="hero bg-cover  min-w-screen min-h-screen lg:h-full  "
+            style="background-image: url(./c1-assets/cat-big.png);">
+            
+            <div class="hero-content text-neutral-content text-center lg:my-25 ">
+              <div class="max-w-full absolute lg:top-12 top-0 left-0   text-left lg:py-25 ">
+                <h1 class="mb-5 text-5xl font-bold" style="color: black;">Pamper Your Pet,
+                    <br> Because They Deserve 
+                    <br> the Best</h1>
+                <p class="mb-5" style="color: rgb(92, 91, 91);">
+                    Discover a world of treats, toys, and essentials handpicked for
+                    <br> your furry friends. Shop now and make tails wag with joy!
+                </p>
+                <button class="btn btn-primary" style="color: black; background-color: #FFDC26; border: none;">Find a pet</button>
+              </div>
+            </div>
+          </div>
+         </div>
+
+     </main>
+     <!-- Footer Section -->
+      <footer>
+
+      </footer>
 </body>
 </html>
